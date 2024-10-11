@@ -1,0 +1,50 @@
+.navbar-container {
+    position: relative;
+    width: 100%;
+    background-color: #f8f8f8; // Cambia esto al color que prefieras
+    box-shadow: 0 4px 2px -2px gray; // Añade una sombra sutil para un efecto elegante
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    img {
+      max-height: 80px; // Ajusta la altura según tu necesidad
+    }
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      margin-right: 20px;
+  
+      a {
+        text-decoration: none;
+        color: #333; // Cambia esto al color que prefieras
+        font-weight: bold;
+        padding: 10px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #f00; // Cambia esto al color de hover que prefieras
+        }
+      }
+    }
+  }
+  
