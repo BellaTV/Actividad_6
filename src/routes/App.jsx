@@ -5,6 +5,7 @@ import Home from "../pages/Home"
 import NotFound from "../pages/NotFound"
 
 import "../styles/global.scss"
+import ProductDetails from "../components/ProductDetails"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/products" element={<Products/>}/>
+        <Route path="/productDetails" element={<ProductDetails/>}/>
         <Route path="*" element={<NotFound/>} />  
       </Routes>      
     </BrowserRouter>
