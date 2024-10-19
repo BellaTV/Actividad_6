@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Products from "../pages/Products"
 import Home from "../pages/Home"
+import ProductDetails from "../components/ProductDetails"
 import NotFound from "../pages/NotFound"
 
 import "../styles/global.scss"
-import ProductDetails from "../components/ProductDetails"
 
 function App() {
 
@@ -23,5 +23,5 @@ function App() {
   )
 }
 
-export default App
+export default App;
 

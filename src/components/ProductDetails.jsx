@@ -2,6 +2,8 @@
 import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 
+import "./ProductDetails.scss"
+
 const listProducts = [
   {
     id: 1,
@@ -37,23 +39,19 @@ const ProductDetails = () => {
     <div>
       <Navbar />
       <main className="container">
-        {product ? (
-          <>
-            <section>
-              <figure>
-                <img src={product.img} alt={product.nombre} className="product-image" height={"800px"} />
-              </figure>
-            </section>
-            <section>
+
+            <div className="productdetails">
+              <div className="productimage">
+                <img src={product.img} alt={product.nombre} className="productimage" height={"800px"} />
+              </div>
+            </div>
+            <div className="productinfo">
               <h1>{product.nombre}</h1>
               <p>Precio: {product.precio}</p>
               <p>Descripción: {product.descripcion}</p>
-            </section>
+            </div>
 
-          </>
-        ): (
-          <p>Prosucto no encontrado</p>
-        )}
+
       </main>
       <footer className="footer">
         <p>© BellArt 2020-2024 | Todos los derechos reservados</p>

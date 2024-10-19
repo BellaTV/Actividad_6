@@ -1,0 +1,29 @@
+.productdetails {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+  
+    .productimage {
+      flex: 1;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    .productinfo {
+      flex: 2;
+      padding-left: 2rem;
+      
+      h1 {
+        margin-bottom: 1rem;
+      }
+      
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }

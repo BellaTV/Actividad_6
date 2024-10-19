@@ -25,28 +25,30 @@ const listProducts = [
 
 const Products = () => {
   return (
-    <div>
+    <>
+    <header>
       <Navbar/>
-      <main className="container">
-        <h1>Productos</h1>
-
+    </header>
+    <main className="container">
+          <h1>Productos</h1>
+          <div className="product-grid">
             {listProducts.map(product => (
               <div key={product.id} className="product-containner">
                 <img src={product.img} alt={product.nombre} className="product-image" />
-                <div className="product-details">
-                <h2>{product.nombre}</h2>
-                <p>{product.precio}</p>
+                <h2 className="product-name">{product.nombre}</h2>
+                <p className="product-price">{product.precio}</p>
                 <Link to={`/productDetails?id=${product.id}`}>Ver Detalles</Link>
               </div>
-            </div>
             ))}
-        
+          </div>
       </main>
       <footer>
         <p>© BellArt 2020- 2024 | Todos los derechos reservados</p>
       </footer>
-       </div>
+    </>
   )
 }
 
 export default Products;
+
+

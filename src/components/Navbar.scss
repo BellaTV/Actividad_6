@@ -1,50 +1,58 @@
+@import "../styles/variables.scss";
+
 .navbar-container {
-    position: relative;
-    width: 100%;
-    background-color: #f8f8f8; // Cambia esto al color que prefieras
-    box-shadow: 0 4px 2px -2px gray; // Añade una sombra sutil para un efecto elegante
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    img {
-      max-height: 80px; // Ajusta la altura según tu necesidad
-    }
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  
-    li {
-      margin-right: 20px;
-  
-      a {
-        text-decoration: none;
-        color: #333; // Cambia esto al color que prefieras
-        font-weight: bold;
-        padding: 10px;
-        transition: color 0.3s;
-  
-        &:hover {
-          color: #f00; // Cambia esto al color de hover que prefieras
-        }
-      }
-    }
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+  display: flex;
+  justify-content: center; /* Cambiado a center para centrar todo el contenido */
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.navbar-logo {
+  padding-top: 5px;
+  position: absolute; /* Cambiado a absolute para centrar el logo */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-logo img {
+  max-height: 70px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  z-index: 10;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: $primary-text-color;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: rgb(24, 53, 91);
+}
+
+.container {
+  padding-top: 80px /* Ajusta el padding-top para evitar que el contenido esté detrás del navbar */
+}
