@@ -1,15 +1,19 @@
-.product-list {
+.productGrid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  justify-content: center;
+
+  .productContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .product-container {
-    display: flex;
     align-items: center;
-    width: 100%;
     margin-bottom: 20px;
-  }
+    width: 300px;
+    min-height: 400px;
+    
+   }
   
   .product-image {
     flex: 1;
@@ -19,4 +23,11 @@
   .product-details {
     flex: 2;
   }
+
+
+  
+}
+
+
+
   
