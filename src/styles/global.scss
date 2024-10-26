@@ -1,52 +1,62 @@
 @import "./variables.scss";
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family:$font-family;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: rgb(3,32,59);
+background: linear-gradient(90deg, rgba(3,32,59,1) 8%, rgba(8,9,14,1) 66%);
 }
 
 header {
-  position: fixed;
+  position: fixed;  
   top: 0;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.5);
   z-index: 10;
   box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.199);
 }
 
 .banner {
-  position: relative;
-  background-image: $background-image;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  // background-image: $background-image;
+  
+ 
+  height: 90vh;
+
   color: $primary-text-color;
-  text-align: center;
-}
+  justify-content: center;
+  
 
-.banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  z-index: 1;
-}
+  .banner-text{
+    font-size: 3rem;
+    align-self: center;
+    justify-self: center;
 
-.banner-text {
-  position: relative;
-  z-index: 2;
-}
+    p{
+    font-size: large;
+    }
+    
+    
 
-.banner-text h1 {
-  font-size: 4rem;
+
+  }
+
+  .banner-image{
+    width: 65%;
+    align-self: start;
+    justify-self: end;
+    padding: 0 40px 0 20px;
+    .imagebanner{
+      max-width: 500px;
+      border-radius: 20px;
+
+    }
+    
+  }
 }
 
 .btn {

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
-
+import imageBanner from "../assets/images/banner-image.jpg"
 
 function Home() {
   return (
@@ -12,8 +12,12 @@ function Home() {
     <main className="container">
       <section className="banner">
         <div className="banner-text">
-          <h1>Arte digital</h1>
-        <Link to="/products">Ver galleria</Link>
+          <h1>Bienvenido a BellArt</h1>
+          <p>Elige entre miles de obras de arte digital exclusivas.</p> 
+          <Link to="/products"> ¡Compra ahora! </Link> 
+        </div>
+        <div className="banner-image">
+          <img className="imagebanner" src={imageBanner} alt="imgage banner" />
         </div>
       </section>
     </main>  

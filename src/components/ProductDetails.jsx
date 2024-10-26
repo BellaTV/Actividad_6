@@ -38,20 +38,15 @@ const ProductDetails = () => {
   return (
     <div>
       <Navbar />
-      <main className="container">
-
-            <div className="productdetails">
-              <div className="productimage">
-                <img src={product.img} alt={product.nombre} className="productimage" height={"800px"} />
-              </div>
-            </div>
-            <div className="productinfo">
-              <h1>{product.nombre}</h1>
-              <p>Precio: {product.precio}</p>
-              <p>Descripción: {product.descripcion}</p>
-            </div>
-
-
+      <main className="container-ProductDetails">
+        <div className="productimage">
+          <img src={product.img} alt={product.nombre} className="productimage" />
+        </div>
+        <div className="productinfo">
+          <h1>{product.nombre}</h1>
+          <p>Precio: {product.precio}</p>
+          <p>Descripción: {product.descripcion}</p>
+        </div>
       </main>
       <footer className="footer">
         <p>© BellArt 2020-2024 | Todos los derechos reservados</p>
