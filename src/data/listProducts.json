@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mirada al Horizonte",
+    "precio": 480000,
+    "imagen": "https://plus.unsplash.com/premium_photo-1711136314731-8c3fe1831672?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descripcion": {
+      "año": 2024,
+      "material": "Lienzo de alta calidad",
+      "tamaño": ["30x40 cm", "50x70 cm", "70x100 cm"]
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Susurros del Viento",
+    "precio": 342000,
+    "imagen": "https://img.freepik.com/foto-gratis/ilustracion-estilo-arte-digital-disenador-moda_23-2151537644.jpg?t=st=1730000224~exp=1730003824~hmac=b0ab76f32921694e7a5781b6d8430ca58cfbb17a2fb8b5fe5d4d900358cfbffe&w=740",
+    "descripcion": {
+      "año": 2023,
+      "material": "Papel fotográfico premium",
+      "tamaño": ["21x30 cm", "30x45 cm", "45x60 cm"]
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Ecos de la Naturaleza",
+    "precio": 400000,
+    "imagen": "https://img.freepik.com/foto-gratis/sentido-tacto-collage-aves_23-2149848100.jpg?t=st=1730000293~exp=1730003893~hmac=b5ada45f1df75aad79d83f58db140f0fb3eed0b0960ff2e1f02688a37632ac74&w=360",
+    "descripcion": {
+      "año": 2022,
+      "material": "Acrílico sobre lienzo",
+      "tamaño": ["40x60 cm", "60x90 cm", "80x120 cm"]
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Sombras del Pasado",
+    "precio": 603000,
+    "imagen": "https://img.freepik.com/foto-gratis/collaje-monocromo-medio-tono_23-2151005035.jpg?t=st=1730000428~exp=1730004028~hmac=e508a64d4ef6847ef027080fe2118acc49a0382f152ddf36dc8c85da8223d831&w=740",
+    "descripcion": {
+      "año": 2021,
+      "material": "Impresión en metal",
+      "tamaño": ["20x30 cm", "40x60 cm", "60x90 cm"]
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Reflejos del Alma",
+    "precio": 520000,
+    "imagen": "https://img.freepik.com/foto-gratis/arte-digital-hadas-magicas_23-2151589375.jpg?t=st=1730000846~exp=1730004446~hmac=ff46f01462abfe3087f86a298bf66dc5ec2868923eed581b645ff6bfcce137ef&w=740",
+    "descripcion": {
+      "año": 2020,
+      "material": "Lienzo artístico",
+      "tamaño": ["30x40 cm", "50x70 cm", "70x100 cm"]
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Sueños en el Crepúsculo",
+    "precio": 380000,
+    "imagen": "https://img.freepik.com/foto-gratis/hermosas-nubes-arte-digital_23-2151105879.jpg?t=st=1730000966~exp=1730004566~hmac=36cd2a509817cbd170d440529f17ae8165eb50ad6724685df861c6b8e6276314&w=360",
+    "descripcion": {
+      "año": 2023,
+      "material": "Papel texturizado",
+      "tamaño": ["21x30 cm", "30x45 cm", "45x60 cm"]
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Ríos de Tinta",
+    "precio": 440000,
+    "imagen": "https://img.freepik.com/foto-gratis/cuevas-congeladas-viaje-increible-dentro_1232-4511.jpg?t=st=1730001162~exp=1730004762~hmac=e4f46cca3e778bd14facbf995ee2105782f0130d7dbc40fe2b778acaa1d0ceb9&w=360",
+    "descripcion": {
+      "año": 2024,
+      "material": "Impresión en vidrio",
+      "tamaño": ["30x40 cm", "50x70 cm", "70x100 cm"]
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Voces del Silencio",
+    "precio": 700000,
+    "imagen": "https://img.freepik.com/foto-gratis/ilustracion-estilo-arte-digital-mes-concienciacion-sobre-cancer-mama_23-2151827764.jpg?t=st=1730001235~exp=1730004835~hmac=bb12b512695510e8afcc7b52e114fa14149f1d76e9546e9394f1e30b0a929a0d&w=360",
+    "descripcion": {
+      "año": 2022,
+      "material": "Papel artístico mate",
+      "tamaño": ["21x30 cm", "30x45 cm", "45x60 cm"]
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Puntos de Infinitud",
+    "precio": 420000,
+    "imagen": "https://img.freepik.com/fotos-premium/visualizacion-datos-rutas-navegacion-interacciones-usuarios_1314467-92416.jpg?w=740",
+    "descripcion": {
+      "año": 2021,
+      "material": "Lienzo premium",
+      "tamaño": ["40x60 cm", "60x90 cm", "80x120 cm"]
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Lágrimas de Alegría",
+    "precio": 360000,
+    "imagen": "https://img.freepik.com/foto-gratis/agua-estilo-anime_23-2151080256.jpg?t=st=1730001454~exp=1730005054~hmac=d80c44ad8ae4174ff46f518800115faa4beb34fc89c34eb9271f131734e05d85&w=900",
+    "descripcion": {
+      "año": 2020,
+      "material": "Impresión en madera",
+      "tamaño": ["20x30 cm", "40x60 cm", "60x90 cm"]
+    }
+  },
+  {
+    "id": 11,
+    "nombre": "Ritmos del Corazón",
+    "precio": 460000,
+    "imagen": "https://img.freepik.com/foto-gratis/concepto-corazon-roto_23-2151260910.jpg?t=st=1730001553~exp=1730005153~hmac=f957c6cb647bef8cc18a57eea66f046a7dfea718bc2b7765aaea4d469e182425&w=360",
+    "descripcion": {
+      "año": 2023,
+      "material": "Papel metálico",
+      "tamaño": ["21x30 cm", "30x45 cm", "45x60 cm"]
+    }
+  },
+  {
+    "id": 12,
+    "nombre": "Latidos del Universo",
+    "precio": 500000,
+    "imagen": "https://img.freepik.com/foto-gratis/paisaje-estrellas-fugaz-fantasia-noche_23-2151515665.jpg?t=st=1730001602~exp=1730005202~hmac=f3a5889a9d647cca9688f6ca5b5073dd1d3850640ee2726820e148614f891dfe&w=900",
+    "descripcion": {
+      "año": 2021,
+      "material": "Impresión en aluminio",
+      "tamaño": ["40x60 cm", "60x90 cm", "80x120 cm"]
+    }
+  },
+  {
+    "id": 13,
+    "nombre": "Bailando con las Sombras",
+    "precio": 540000,
+    "imagen": "https://img.freepik.com/foto-gratis/patinaje-sobre-hielo-blanco-negro_23-2151390968.jpg?t=st=1730001700~exp=1730005300~hmac=ee192cb3df83a55b10e65ed4478c9c15370cce9bf2159c4348f11824be7e72bb&w=360",
+    "descripcion": {
+      "año": 2020,
+      "material": "Lienzo de lino",
+      "tamaño": ["30x40 cm", "50x70 cm", "70x100 cm"]
+    }
+  },
+  {
+    "id": 14,
+    "nombre": "Suspiros de Fantasía",
+    "precio": 580000,
+    "imagen": "https://img.freepik.com/foto-gratis/celebracion-ano-nuevo-chino_23-2151073598.jpg?t=st=1730001776~exp=1730005376~hmac=027b64e05e76c0d19a6b6a09a889c69c607700cea90c5b52b3fd6e52faea2f98&w=740",
+    "descripcion": {
+      "año": 2023,
+      "material": "Papel fotográfico lustre",
+      "tamaño": ["21x30 cm", "30x45 cm", "45x60 cm"]
+    }
+  }
+]

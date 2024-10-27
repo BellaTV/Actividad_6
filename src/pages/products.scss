@@ -1,3 +1,8 @@
+
+*{
+  border-radius: 2px !important;
+}
+
 .productGrid{
   display: flex;
   flex-wrap: wrap;
@@ -6,6 +11,7 @@
   justify-content: center;
 
   .productContainer {
+    position: sticky;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -16,7 +22,7 @@
    }
   
   .product-image {
-    flex: 1;
+    flex: 10;
     margin-right: 20px;
   }
   

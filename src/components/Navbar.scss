@@ -20,7 +20,8 @@
 }
 
 .navbar-logo img {
-  max-height: 70px;
+
+  max-height: 55px;
 }
 
 .navbar {
@@ -39,6 +40,13 @@
 
 .navbar-menu li {
   margin-right: 20px;
+  border-width: 1px;
+  padding: 4%;
+  border-color: rgb(127, 140, 158);
+  &:hover{
+    background-color: aliceblue;
+    transition: 1.5s;
+  }
 }
 
 .navbar-menu a {
@@ -47,10 +55,11 @@
   font-weight: bold;
   padding: 10px;
   transition: color 0.3s;
+  
 }
 
 .navbar-menu a:hover {
-  color: rgb(24, 53, 91);
+  color: rgb(128, 144, 164);
 }
 
 .container {
