@@ -15,10 +15,9 @@ const ProductDetails = () => {
   const productId = query.get('id');
   const product = listProducts.find((p) => p.id === parseInt(productId));
 
-  if (productId && !product) {
+ if (productId && !product) {
     return <NotFound/>;
   }
-
 
   return (
     <div className="container-ProductDetails">
