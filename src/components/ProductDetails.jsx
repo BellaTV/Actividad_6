@@ -1,7 +1,8 @@
 //Muestra detalles del producto obteniendo el id desde los query params.
-import { useLocation } from 'react-router-dom';
-import { useContext } from 'react';
-import { ListProductsContext } from '../context/ListProductsContext';
+import { useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { ListProductsContext } from "../context/ListProductsContext";
+
 
 import "./ProductDetails.scss"
 
@@ -29,7 +30,6 @@ const ProductDetails = () => {
           <p className="price">Precio: $ {product.precio}</p>
           <button className="buyButton">Agregar al carrito</button>
         </div>
-
       </div>
     </div>
   );

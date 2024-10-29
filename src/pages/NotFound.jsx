@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom"
+import "./notFound.scss"
 
-export default function NotFound() {
+const NotFound = () => {
   return (
-    <div>NotFound
-      <p>Volver al <Link to="/home">home</Link></p>
-    </div>
-  )
+      <div className="notfound-container">
+        <h1>404</h1>
+        <p>Página no encontrada</p>
+        <p>Volver al <Link to="/" className="home-link">inicio</Link></p>
+      </div>
+  );
 }
+
+export default NotFound;
