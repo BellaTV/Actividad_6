@@ -11,7 +11,7 @@ const Products = () => {
     
   return (
     <>
-      <h2 className="secondaryTitle">Catalogó de arte digital</h2>
+      <h2 className="secondaryTitle">Catálogo de arte digital</h2>
       <p className="catalogIntroduction">Atrévete a dejar atrás las formas de arte tradicionales y descubre un mundo lleno de posibilidades con el arte digital. Explora obras gráficas, ilustrativas y tipográficas que desafían la creatividad y la innovación. Dale vida a tus espacios con piezas únicas que capturan la esencia del arte contemporáneo.</p>
       <div className="productGrid">
         {listProducts.map((product) => (
