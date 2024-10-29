@@ -3,8 +3,9 @@ import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { ListProductsContext } from "../context/ListProductsContext";
 
+import "./ProductDetails.scss";
+import NotFound from "../pages/NotFound";
 
-import "./ProductDetails.scss"
 
 const ProductDetails = () => {
   const listProducts = useContext(ListProductsContext)
@@ -13,6 +14,10 @@ const ProductDetails = () => {
   const query = new URLSearchParams(location.search);
   const productId = query.get('id');
   const product = listProducts.find((p) => p.id === parseInt(productId));
+
+  if (productId && !product) {
+    return <NotFound/>;
+  }
 
 
   return (
