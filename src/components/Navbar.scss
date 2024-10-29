@@ -6,7 +6,7 @@
   width: 100%;
   box-shadow: 0 4px 2px -2px gray;
   display: flex;
-  justify-content: center; /* Cambiado a center para centrar todo el contenido */
+  justify-content: center; 
   align-items: center;
   padding: 10px 20px;
   z-index: 10;
@@ -14,7 +14,7 @@
 
 .navbar-logo {
   padding-top: 15px;
-  position: absolute; /* Cambiado a absolute para centrar el logo */
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   
@@ -26,7 +26,7 @@
 
 .cart{
   padding-top: 5px;
-  position: absolute; /* Cambiado a absolute para centrar el logo */
+  position: absolute; 
   right: 2.5%;
   
   .cartImage{
