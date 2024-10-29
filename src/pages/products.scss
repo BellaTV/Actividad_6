@@ -1,7 +1,4 @@
-
-*{
-  border-radius: 2px !important;
-}
+@import "../styles/variables.scss";
 
 .productGrid{
   display: flex;
@@ -17,23 +14,25 @@
     align-items: center;
     margin-bottom: 20px;
     width: 300px;
-    min-height: 400px;
-    
+    min-height: 400px;  
    }
-  
-  .product-image {
-    flex: 10;
-    margin-right: 20px;
-  }
-  
-  .product-details {
-    flex: 2;
-  }
-
-
-  
 }
 
+.secondaryTitle{
+  text-align: center;
+  font-size: $font-size-large;
+  font-weight: bold;
+  color: $secondary-text-color;
+  padding: 15px;
+}
+
+.catalogIntroduction{
+  justify-self: center;
+  font-size: $font-size-medium;
+  color: $secondary-text-color;
+  padding: 10px;
+  width: 80%;
+}
 
 
   

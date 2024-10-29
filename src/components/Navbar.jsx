@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/pink  Simple Studio Logo.png"
+import logo from "../assets/images/bellartLogo.png"
+import cart from "../assets/images/shopping-cart_10440206.png"
 
 import "./Navbar.scss"
 
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
   <div className="Navbar-container">
     <div className="navbar-logo">
-      <Link to="/home">
+      <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
     </div>
@@ -16,7 +17,12 @@ const Navbar = () => {
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/products">Productos</Link></li>
        </ul>
+       <div className="cart">
+        <img className="cartImage" src={cart} alt="imge" />
+       </div>
+        
     </nav>
+      
   </div>
   );
 };

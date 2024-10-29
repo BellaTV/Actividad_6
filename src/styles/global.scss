@@ -7,116 +7,19 @@
 
 body {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   font-family:$font-family;
+  font-style: normal;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 100%;
   background: $primary-bg-color;
-  
 }
 
 header {
   position: fixed;  
-  top: 0;
   width: 100%;
   z-index: 10;
-}
-
-.banner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: rgb(8,9,14);
-  background: linear-gradient(180deg, rgba(8,9,14,1) 8%, rgba(3,32,59,1) 64%, rgba(232,214,221,0.7512254901960784) 98%);
-  height: 100vh;
-  
-  color: $primary-text-color;
-  justify-content: center;
-  top: -80px;
-  position: relative;
-
-  .banner-text{
-    font-size: 3rem;
-    align-self: center;
-    justify-self: center;
-
-    p{
-    font-size: large;
-    }
-    
-    
-
-
-  }
-
-  .banner-image{
-    min-height: 90vh;
-    
-    align-self: start;
-    justify-self: center;
-    
-    
-    
-    .imagebanner{
-      max-width: 500px;
-      border-radius: 5px;
-      margin-top: 50px;
-    }
-    
-  }
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  color: white;
-  background-color: #008000;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #005700;
-}
-
-.store {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.store h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.product-container {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-}
-
-.product-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.product-name {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.product-price {
-  font-size: 1rem;
-  color: #666;
 }
 
 footer {
@@ -125,6 +28,6 @@ footer {
   background-color: $secondary-bg-color;
   position: relative;
   z-index: 10;
-  color: $secondary-text-color;
+  color: $tertiary-text-color;
 }
 

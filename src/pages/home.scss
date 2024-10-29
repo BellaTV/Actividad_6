@@ -1,0 +1,56 @@
+@import "../styles/variables.scss";
+
+.banner {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    background: rgb(8,9,14);
+    background: linear-gradient(180deg, rgba(8,9,14,1) 8%, rgba(3,32,59,1) 64%, rgba(232,214,221,0.7512254901960784) 98%);
+    height: 100vh;
+    
+    color: $primary-text-color;
+    justify-content: center;
+    top: -80px;
+    position: relative;
+  
+    .banner-text{
+      font-size: 3rem;
+      align-self: center;
+      justify-self: center;
+      padding-left: 30px ;
+  
+      p{
+      font-size: $font-size-medium;
+      }
+      
+      .collectionLink{
+        font-size: $font-size-large;
+        font-weight: bold;
+        border-width: 1px;
+        padding: 15px; 
+        border-color: rgb(127, 140, 158);
+        &:hover{
+          background-color: $primary-bg-color;
+          transition: 1.5s;
+          color:  rgb(127, 140, 158);
+        }
+      }
+      
+    }
+  
+    .banner-image{
+      min-height: 90vh;
+      
+      align-self: start;
+      justify-self: center;
+      
+      
+      
+      .imagebanner{
+        max-width: 500px;
+        border-radius: 5px;
+        margin-top: 50px;
+      }
+      
+    }
+  }

@@ -13,16 +13,27 @@
 }
 
 .navbar-logo {
-  padding-top: 5px;
+  padding-top: 15px;
   position: absolute; /* Cambiado a absolute para centrar el logo */
   left: 50%;
   transform: translateX(-50%);
+  
 }
 
 .navbar-logo img {
-
   max-height: 55px;
 }
+
+.cart{
+  padding-top: 5px;
+  position: absolute; /* Cambiado a absolute para centrar el logo */
+  right: 2.5%;
+  
+  .cartImage{
+    max-width: 30px;
+  }
+}
+
 
 .navbar {
   display: flex;
@@ -36,10 +47,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  transform: translateX(20%);
 }
 
 .navbar-menu li {
-  margin-right: 20px;
+  margin-right: 10px;
   border-width: 1px;
   padding: 4%;
   border-color: rgb(127, 140, 158);
@@ -55,7 +67,6 @@
   font-weight: bold;
   padding: 10px;
   transition: color 0.3s;
-  
 }
 
 .navbar-menu a:hover {
@@ -63,5 +74,5 @@
 }
 
 .container {
-  padding-top: 80px /* Ajusta el padding-top para evitar que el contenido esté detrás del navbar */
+  padding-top: 80px 
 }

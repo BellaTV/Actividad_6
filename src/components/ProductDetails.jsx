@@ -2,11 +2,8 @@
 import { useLocation } from 'react-router-dom';
 import { useContext } from 'react';
 import { ListProductsContext } from '../context/ListProductsContext';
-import Navbar from './Navbar';
 
 import "./ProductDetails.scss"
-
-
 
 const ProductDetails = () => {
   const listProducts = useContext(ListProductsContext)
@@ -18,24 +15,22 @@ const ProductDetails = () => {
 
 
   return (
-    <div>
-      <Navbar />
-      <main className="container-ProductDetails">
-        <div className="productimage">
-          <img src={product.imagen} alt={product.nombre} className="image" />
+    <div className="container-ProductDetails">
+      <div className="productimage">
+        <img src={product.imagen} alt={product.nombre} className="image" />
+      </div>
+      <div className="productinfo">
+        <h1 className="productName">{product.nombre}</h1>
+        <p className="descriptionText">Descripción: </p>
+        <p className="descriptionText">Año: {product.descripcion.año}</p>
+        <p className="descriptionText">Material: {product.descripcion.material}</p>
+        <p className="descriptionText">Tamaño: {product.descripcion.tamaño}</p>
+        <div className="buyContainer"> 
+          <p className="price">Precio: $ {product.precio}</p>
+          <button className="buyButton">Agregar al carrito</button>
         </div>
-        <div className="productinfo">
-          <h1>{product.nombre}</h1>
-          <p>Precio: {product.precio}</p>
-          <p>Descripción: </p>
-          <p>Año:{product.descripcion.año}</p>
-          <p>Material:{product.descripcion.material}</p>
-          <p>Tamaño:{product.descripcion.tamaño}</p>
-        </div>
-      </main>
-      <footer className="footer">
-        <p>© BellArt 2020-2024 | Todos los derechos reservados</p>
-      </footer>
+
+      </div>
     </div>
   );
 }

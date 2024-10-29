@@ -6,16 +6,18 @@ import ProductDetails from "../components/ProductDetails"
 import NotFound from "../pages/NotFound"
 
 import "../styles/global.scss"
+import MainLayout from "../layouts/MainLayout"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/products" element={<Products/>}/>
-        <Route path="/productDetails" element={<ProductDetails/>}/>
+        <Route path="/" element={<MainLayout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="/products" element={<Products/>}/>
+          <Route path="/productDetails" element={<ProductDetails/>}/>
+        </Route>
         <Route path="*" element={<NotFound/>} />  
       </Routes>      
     </BrowserRouter>

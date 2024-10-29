@@ -1,10 +1,12 @@
+@import "../styles/variables.scss";
+
 .container-ProductDetails{
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: calc(100vh - 88px);
+  align-items: center;
   .productimage {
-    display: flex;
-    justify-content: center;
+    justify-self: center;
     grid-column: 1/2;
     
     .image {
@@ -14,7 +16,7 @@
       margin: 10px;
       border-width: 10px;
       border-color: white;
-      
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
   }
 
@@ -26,17 +28,58 @@
     row-gap: 30px;
     grid-column: 2/3;
     padding-left: 2rem;
-    color: #0a072c;
+    color: $secondary-text-color;
     
-    h1 {
-      color: #0f0e2d;
-      margin-bottom: 1rem;
+    .productName{
+      font-size: $font-size-large;
+      font-weight: 700;
+    }
+
+    .descriptionText{
+      font-size: $font-size-medium;
+      color: $secondary-text-color;
+      
+      
+    }
+
+    .buyContainer{
+      display: flex;
+      flex-direction: column;
+      
+
+      .price{
+        font-size: $font-size-large;
+        font-weight: bold;
+        color: $primary-text-color;
+        margin-bottom: 10%;
+      }
+
+      
+
+      .buyButton{
+        background-color: rgb(77, 104, 142);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: $font-size-medium;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $tertiary-bg-color;
+          color: $primary-text-color;
+      }
+    }
+
     }
     
-    p {
-      color: #12113a;
-      margin-bottom: 0.5rem;
-    }
+
+    
+
+    
   }
 }
   
